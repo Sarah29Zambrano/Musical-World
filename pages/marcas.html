@@ -1,79 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musical Wordl | Marcas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
     <header>
-        <h1>Musical World</h1>
-        <div>
-            
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./quienes-somos.html">¿Quiénes Somos?</a></li>
-                <li><a href="#">Marcas</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+        <img src="../assets/img/Musical World.png" alt="Logo Musical World" class="titulo-imagen">
+
+        <nav class="navbar">
+            <div class="logo"></div>
+
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu" class="menu-icon"> <img src="./assets/img/Menú 32px.png" alt=""></label>
+
+            <ul class="menu">
+                <li><a href="../index.html" target="_blank">Inicio</a></li>
+                <li><a href="../pages/quienes-somos.html" target="_blank">¿Quiénes Somos?</a></li>
+                <li><a href="">Marcas</a></li>
+                <li><a href="../pages/productos.html" target="_blank">Productos</a></li>
+                <li><a href="../pages/contacto.html" target="_blank">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Nuestras Marcas</h2>
-            <div>
-
+        <h1>Nuestras Marcas</h1>
+        <section class="container">
+            <div class="row">
+                <img src="../assets/img/Logo fender.jpg" alt="Logo de la marca fender" class="col-4">
+                <img src="../assets/img/Logo daddario.png" alt="Logo de la marca daddario" class="col-4">
+                <img src="../assets/img/Logo gibson.jpg" alt="Logo marca Gibson" class="col-4">
             </div>
-            <img src="../assets/img/Logo fender.jpg" alt="Logo de la marca fender">
-            <img src="../assets/img/Logo daddario.png" alt="Logo de la marca daddario">
-            <img src="../assets/img/Logo gibson.jpg" alt="">
-            <div>
 
-            </div>
-            <img src="../assets/img/Axl Rose.jpg" alt="Cantante y guitarrista axl rose tocando la guitarra">
-            <img src="..//assets/img/Guitarrista en concierto.avif" alt="Guitarrista en concierto">
-            <div>
-
-            </div>
-            <img src="../assets/img/Logo ernie ball.png" alt="Logo de la marca ernie ball">
-            <img src="../assets/img/Logo squier.png" alt="Logo de la marca squier">
-            <img src="../assets/img/Logo yamaha.png" alt="Logo de la marca yamaha">
-            
-            <div>
-
+            <div class="row">
+                <img src="../assets/img/Logo ernie ball.png" alt="Logo de la marca ernie ball" class="col-4">
+                <img src="../assets/img/Logo squier.png" alt="Logo de la marca squier" class="col-4">
+                <img src="../assets/img/Logo yamaha.png" alt="Logo de la marca yamaha" class="col-4">
             </div>
 
             <h3>Sé todo un profesional tocando con instrumentos de la más alta calidad</h3>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l0r5KgII8wo?si=fGhLcRoha0jE89qQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l0r5KgII8wo?si=fGhLcRoha0jE89qQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </section>
     </main>
-    
+
     <footer>
-        <h2 class="musical-world">Musical World</h2>
+        <div class="wrapper-footer">
+            <div class="footer-item w-100">
+                <h2 class="musical-world">Musical World</h2>
 
-        <p>Seguinos en nuestras redes</p>
+                <p>Seguinos en nuestras redes</p>
 
-        <p><a href="www.facebook.com/musical-world">Facebook</a></p>
-        <p><a href="www.instagram.com/musical-world">Instagram</a></p>
+                <div class="redes">
+                    <img src="../assets/img/instagram.png" alt="Logo facebook">
+                    <img src="../assets/img/instagram.png" alt="Logo instagram">
+                </div>
 
-        <label for="suscribite">Suscribite al Newsletter</label>
-        <textarea name="suscribite" id="suscribite"></textarea>
+                <div class="newsletter-box">
+                    <label for="suscribite">Suscribite al Newsletter</label>
+                    <textarea name="suscribite" id="suscribite"></textarea>
+                </div>
 
-        <h4 class="contact">Contacto</h4>
-        <p class="number">11 95421574</p>
-        <p class="mail">ventas@musicalwordl.com</p>
-
-    <div>
-        <h5>Políticas de Privacidad</h5>
-        <h5>Términos y Condiciones</h5>
-        <h5>Devoluciones y Cambios</h5>
-    </div>
+            </div>
+            <div class="footer-item">
+                <h4 class="contact">Contacto</h4>
+                <p class="number">11 95421574</p>
+                <p class="mail">ventas@musicalwordl.com</p>
+            </div>
+        </div>
+        <div class="policy-privacy-box">
+            Políticas de Privacidad
+            Términos y Condiciones
+            Devoluciones y Cambios
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
+
+
+<!-- <div class="grillasBoostrap container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3"></div>
+        <div class="col-12 col-md-6 col-lg-6"></div>
+        <div class="col-12 col-md-6 col-lg-3"></div>
+        <div class="col-12 col-md-6 col-lg-6"></div>
+        <div class="col-12 col-md-6 col-lg-3"></div>
+        <div class="col-12 col-md-6 col-lg-3"></div>
+    </div>
+</div> -->
