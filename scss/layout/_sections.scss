@@ -1,0 +1,39 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+section {
+    color: variables.$color-bg;
+    font-family: variables.$font-text;
+    font-weight: variables.$font-weight-thin;
+    font-style: normal;
+}
+
+.modelos-destacados {
+    padding: variables.$spacing-small;
+}
+
+.instrumentos-inicio img {
+    @include mixins.flex-center(row);
+    width: 100%;
+    height: 350px;
+}
+
+.guitarrista-inicio img {
+    @include mixins.flex-center(column);
+    height: 300px;
+    justify-self: center;
+}
+
+.section-container {
+    justify-self: center;
+}
+
+.carousel-inner {
+    width: 75%;
+    justify-self: center;
+}
+
+.img-carousel {
+    width: 100%;
+    height: 400px;
+}

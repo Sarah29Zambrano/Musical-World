@@ -1,0 +1,47 @@
+@use '../utils/variables' as variables;
+
+footer {
+    background-color: variables.$color-bg;
+    color: variables.$color-text;
+    font-family: variables.$font-text;
+    font-weight: variables.$font-weight-normal;
+    font-style: normal;
+}
+
+div h5 {
+    text-align: center;
+    display: inline-flex;
+}
+
+.wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsletter-box {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.policy-privacy-box {
+    font-size: xx-small;
+    place-self: center;
+}
+
+.contact,
+.number,
+.mail {
+    text-align: right;
+}
+
+.container {
+    flex-wrap: wrap;
+}

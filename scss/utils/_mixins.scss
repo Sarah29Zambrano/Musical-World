@@ -1,0 +1,18 @@
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin card-hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@mixin responsive-hidden {
+    display: none;
+}

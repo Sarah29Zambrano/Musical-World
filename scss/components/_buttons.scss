@@ -1,0 +1,17 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+.colorBotom {
+  background-color: variables.$color-bg;
+  width: max-content;
+  padding: variables.$spacing-small;
+  color: variables.$color-text;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: center;
+
+  &:hover {
+    background-color: variables.$color-button;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}

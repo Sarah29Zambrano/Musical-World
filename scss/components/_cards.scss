@@ -1,0 +1,36 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+.card-width {
+  width: 18rem;
+  margin: variables.$spacing-small;
+}
+
+.card-container {
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: variables.$spacing-small variables.$spacing-small variables.$spacing-medium;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  place-self: center;
+}
+
+.card-body-container {
+  text-align: center;
+  @include mixins.flex-center(column);
+  justify-content: space-between;
+}
+
+.card-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card:hover {
+  @include mixins.card-hover;
+}

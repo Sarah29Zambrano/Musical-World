@@ -1,0 +1,11 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+header {
+    background-color: variables.$color-bg;
+    color: variables.$color-text;
+    font-family: variables.$font-text;
+    font-weight: variables.$font-weight-bold;
+    @include mixins.flex-center(column);
+    justify-content: space-between;
+}

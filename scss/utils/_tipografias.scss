@@ -1,0 +1,49 @@
+@use './variables' as variables;
+@use './mixins' as mixins;
+
+h1, h2, h3 { 
+    color: variables.$color-bg;
+    font-family: variables.$font-text;
+    font-style: normal;
+    font-size:xx-large;
+    @include mixins.text-center;
+}
+
+h1 {
+    font-weight: variables.$font-weight-thin;
+    font-size: 35px; font-weight: bold;
+}
+
+h2 {
+    background-color: variables.$color-bg;
+    color: variables.$color-text;
+    font-weight: 600;
+    padding: 5px;
+}
+
+h3 {
+    font-weight: 600;
+    padding-block: 10px;
+    justify-content: center;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+legend {
+    font-weight: 100;
+    padding-block: 10px;
+    justify-content: space-between;
+}
+
+.form-label {
+    font-weight: 100, bold;
+    padding-block: 10px;
+    justify-content: space-between
+}
