@@ -10,3 +10,8 @@
 @use './components/buttons';
 @use './components/cards';
 @use './components/footer';
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
