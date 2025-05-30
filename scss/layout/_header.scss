@@ -2,10 +2,13 @@
 @use '../utils/mixins' as mixins;
 
 header {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
     background-color: variables.$color-bg;
     color: variables.$color-text;
     font-family: variables.$font-text;
     font-weight: variables.$font-weight-bold;
-    @include mixins.flex-center(column);
+    @include mixins.flex-center(row);
     justify-content: space-between;
 }

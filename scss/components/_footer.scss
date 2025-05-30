@@ -6,29 +6,35 @@ footer {
     font-family: variables.$font-text;
     font-weight: variables.$font-weight-normal;
     font-style: normal;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
 }
 
 div h5 {
     text-align: center;
     display: inline-flex;
+    margin: 0;
 }
 
 .wrapper-footer {
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 15%;
+    flex-wrap: wrap;
 }
 
 .footer-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
 }
 
 .newsletter-box {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 50%;
 }
 
 .policy-privacy-box {
@@ -36,10 +42,14 @@ div h5 {
     place-self: center;
 }
 
-.contact,
+.contact {
+    text-align: end;
+}
 .number,
 .mail {
-    text-align: right;
+    margin: 0;
+    padding: 0;
+    text-align: end;
 }
 
 .container {
